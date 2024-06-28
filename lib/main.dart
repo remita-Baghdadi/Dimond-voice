@@ -1,4 +1,4 @@
-import 'package:dimondvoice/feature/screens/login-page.dart';
+
 import 'package:dimondvoice/feature/screens/splachscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -39,13 +39,7 @@ class MyHomePage extends StatelessWidget {
         width: 300,
         child: Center(child: Text('Home Page')),
       ),
-    initialeRoute: '/',
-    routes:{
-      '/': (context)=> const SplashPage(),
-      '/login': (context) => const LoginPage(),
-      '/acccount': (context) => const AccountPage(),
-    }
-    
+   
     );
   
   

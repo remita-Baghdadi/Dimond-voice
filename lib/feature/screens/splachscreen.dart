@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:dimondvoice/feature/screens/signUp.dart';
 import 'package:dimondvoice/main.dart';
-
+import 'login.dart';
 import 'package:flutter/material.dart';
 import 'package:supabase/supabase.dart';
 
@@ -36,7 +37,7 @@ class _splashScreenState extends State<splashScreen> {
   _navigatetohome() async {
     await Future.delayed(Duration(seconds: 3), () {});
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => const MyHomePage()));
+        context, MaterialPageRoute(builder: (context) => Signin()));
   }
 
   @override

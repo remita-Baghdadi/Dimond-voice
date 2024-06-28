@@ -1,3 +1,7 @@
+// ignore_for_file: prefer_const_constructors
+
+import 'package:dimondvoice/feature/screens/signUp.dart';
+import 'package:dimondvoice/widgets/authInfo.dart';
 import 'package:flutter/material.dart';
 import 'package:custom_button_builder/custom_button_builder.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -7,102 +11,99 @@ class Signin extends StatefulWidget {
   const Signin({super.key});
 
   @override
-  State<Signin> createState() => _SigninState();
+  State<Signin> createState() => SigninState();
 }
 
-class _SigninState extends State<Signin> {
+class SigninState extends State<Signin> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          SizedBox(height: 30),
-          Padding(padding: EdgeInsets.all(8)),
-          Row(
-            children: [
-              Padding(padding: EdgeInsets.all(80)),
-              Image.asset("assests/white_logo.png", height: 100, width: 100)
-            ],
-          ),
-          const Padding(padding: EdgeInsets.all(10)),
-          const Text("Welcome to the Diamond",
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 25.0,
-                  fontWeight: FontWeight.bold)),
-          const SizedBox(
-            height: 30,
-          ),
-          const Row(
-            children: [
-              Padding(padding: EdgeInsets.all(18)),
-              Text(
-                "Account information",
-                style: TextStyle(color: Colors.black),
-              )
-            ],
-          ),
-          customTextbox("email", Icons.person, emailController),
-          const SizedBox(height: 20),
-          customTextbox("password", Icons.lock, passwordController),
-          const SizedBox(height: 40),
-          Row(
-            children: [
-              const Padding(padding: EdgeInsets.all(18)),
-              CustomButton(
-                onPressed: () {
-                  Future<void> signInWithEmail() async {
-                    final AuthResponse res = await supabase.auth
-                        .signInWithPassword(
-                            email: emailController.text,
-                            password: passwordController.text);
-                            final Session? session = res.session;
-                            final User? user = res.user;
-                    print(res);
-                  }
-                },
-                width: 350,
-                height: 48,
-                decoration: const BoxDecoration(
-                    color: Color.fromRGBO(56, 122, 245, 1),
-                    borderRadius: BorderRadius.all(Radius.circular(10))),
-                child: const Text("Login",
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(height: 50),
+            Padding(padding: EdgeInsets.all(8)),
+            const Padding(padding: EdgeInsets.all(10)),
+            const Text("Sign in",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold)),
+            const SizedBox(
+              height: 30,
+            ),
+            const Text("Hi ! Welcome back, you have been missed.",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 12.0,
+                    fontWeight: FontWeight.normal)),
+            const SizedBox(
+              height: 30,
+            ),
+            const Row(
+              children: [
+                Padding(padding: EdgeInsets.all(18)),
+                Text(
+                  "Account information",
+                  style: TextStyle(color: Colors.black),
+                )
+              ],
+            ),
+            authInfo("email", Icons.email, emailController, false),
+            const SizedBox(height: 20),
+            authInfo("password", Icons.lock, passwordController, true),
+            const SizedBox(height: 40),
+            CustomButton(
+              onPressed: () {
+                Future<void> signInWithEmail() async {
+                  final AuthResponse res = await supabase.auth
+                      .signInWithPassword(
+                          email: emailController.text,
+                          password: passwordController.text);
+                  final Session? session = res.session;
+                  final User? user = res.user;
+                  print(res);
+                }
+              },
+              width: 350,
+              height: 48,
+              decoration: const BoxDecoration(
+                  color: Color.fromARGB(255, 136, 88, 214),
+                  borderRadius: BorderRadius.all(Radius.circular(10))),
+              child: const Text("Login",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16)),
+            ),
+            SizedBox(height: 70),
+            Center(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  RichText(
+                      text: const TextSpan(
+                    text: "Don't have an account yet ?",
                     style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16)),
-              )
-            ],
-          )
-        ],
-      ),
-    );
-  }
-
-  Padding customTextbox(
-      String hintText, IconData icon, TextEditingController textController) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 10, left: 32, right: 29),
-      child: TextField(
-        controller: textController,
-        decoration: InputDecoration(
-          enabledBorder: OutlineInputBorder(
-              borderSide: const BorderSide(
-                  color: Color.fromRGBO(168, 168, 169, 1), width: 1.0),
-              borderRadius: BorderRadius.circular(10)),
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
-          prefixIcon: Icon(icon),
-          fillColor: Colors.white,
-          filled: true,
-          hintText: hintText,
-          hintStyle: const TextStyle(
-            fontFamily: 'Montserrat',
-            fontSize: 12,
-            fontWeight: FontWeight.w500,
-            color: Color.fromRGBO(103, 103, 103, 1),
-          ),
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontFamily: 'Montserrat',
+                        fontWeight: FontWeight.w600,
+                        fontSize: 12),
+                  )),
+                  TextButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => SignUp()));
+                      },
+                      child: const Text('Sign up',
+                          style: TextStyle(
+                              color: Color.fromARGB(255, 136, 88, 214)))),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
