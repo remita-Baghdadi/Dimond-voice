@@ -1,7 +1,9 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:dimondvoice/feature/screens/signUp.dart';
+import 'package:dimondvoice/constants/constansts.dart';
+import 'package:dimondvoice/feature/screens/login.dart';
 import 'package:dimondvoice/main.dart';
-import 'login.dart';
 import 'package:flutter/material.dart';
 import 'package:supabase/supabase.dart';
 
@@ -30,7 +32,8 @@ class _splashScreenState extends State<splashScreen> {
     if (session != null) {
       Navigator.of(context).pushReplacementNamed('/account');
     } else {
-      Navigator.of(context).pushReplacementNamed('/login');
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => Signin()));
     }
   }
 
@@ -43,7 +46,7 @@ class _splashScreenState extends State<splashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 136, 88, 214),
+      backgroundColor: purple,
       body: Column(
         children: [
           SizedBox(height: 200),
@@ -60,7 +63,7 @@ class _splashScreenState extends State<splashScreen> {
                 child: AnimatedTextKit(
                   animatedTexts: [
                     TyperAnimatedText(
-                      "dimondvoice",
+                      "diamond voice",
                       textStyle: TextStyle(
                           fontSize: 0,
                           fontWeight: FontWeight.bold,

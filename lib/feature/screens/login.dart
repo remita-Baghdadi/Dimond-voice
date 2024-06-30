@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:dimondvoice/constants/constansts.dart';
+import 'package:dimondvoice/feature/screens/main/NavBar.dart';
 import 'package:dimondvoice/feature/screens/signUp.dart';
 import 'package:dimondvoice/widgets/authInfo.dart';
 import 'package:flutter/material.dart';
@@ -95,11 +97,10 @@ class SigninState extends State<Signin> {
                   TextButton(
                       onPressed: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => SignUp()));
+                            MaterialPageRoute(builder: (context) => NavBar()));
                       },
                       child: const Text('Sign up',
-                          style: TextStyle(
-                              color: Color.fromARGB(255, 136, 88, 214)))),
+                          style: TextStyle(color: purple))),
                 ],
               ),
             ),

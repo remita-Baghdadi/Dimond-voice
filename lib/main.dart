@@ -1,16 +1,14 @@
-
 import 'package:dimondvoice/feature/screens/splachscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-void main() async{
 
-await Supabase.initialize(
-url:'https://htyfbxzuvnuxpmrgnzcx.supabase.co',
-anonKey: 
-'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh0eWZieHp1dm51eHBtcmduemN4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTkxMTcyMjYsImV4cCI6MjAzNDY5MzIyNn0.WA7MrTTZr30_yYGAD_16vWQczeD-O2AQE_a7eDHZcwk',
-  
-);
+void main() async {
+  await Supabase.initialize(
+    url: 'https://htyfbxzuvnuxpmrgnzcx.supabase.co',
+    anonKey:
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh0eWZieHp1dm51eHBtcmduemN4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTkxMTcyMjYsImV4cCI6MjAzNDY5MzIyNn0.WA7MrTTZr30_yYGAD_16vWQczeD-O2AQE_a7eDHZcwk',
+  );
   runApp(const MyApp());
 }
 
@@ -25,23 +23,5 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: splashScreen(),
     );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        height: 300,
-        width: 300,
-        child: Center(child: Text('Home Page')),
-      ),
-   
-    );
-  
-  
   }
 }

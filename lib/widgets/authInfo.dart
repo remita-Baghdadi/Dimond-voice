@@ -1,3 +1,4 @@
+import 'package:dimondvoice/constants/constansts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -27,7 +28,7 @@ Padding authInfo(String hintText, IconData icon,
             fillColor: Colors.white,
             filled: true,
             hintStyle: const TextStyle(
-              fontFamily: 'Montserrat',
+              fontFamily: ub,
               fontSize: 12,
               fontWeight: FontWeight.w500,
               color: Color.fromRGBO(103, 103, 103, 1),
@@ -36,5 +37,13 @@ Padding authInfo(String hintText, IconData icon,
         ),
       ],
     ),
+  );
+}
+
+Container a() {
+  return Container(
+    height: 100,
+    width: 100,
+    color: purple,
   );
 }
