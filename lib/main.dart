@@ -1,7 +1,11 @@
+import 'package:dimondvoice/api/FetchData.dart';
+import 'package:dimondvoice/feature/screens/ItemList.dart';
 import 'package:dimondvoice/feature/screens/splachscreen.dart';
+import 'package:dimondvoice/models/BookModel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:dimondvoice/feature/screens/audiobooks/AudioPlayerScreen.dart';
 
 void main() async {
   await Supabase.initialize(
@@ -21,7 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: splashScreen(),
+      home: ItemList(),
     );
   }
 }

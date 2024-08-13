@@ -18,6 +18,8 @@ dependencies:
   supabase_flutter: ^2.5.6
   custom_button_builder: ^0.0.4
   audioplayers: ^6.0.0
+  http: ^1.2.2
+  sqflite: ^2.3.3+1
 
 dev_dependencies:
   flutter_test:
@@ -53,5 +55,27 @@ flutter:
     - assests\images\svg\microphone-svgrepo-com.svg
     - assests\images\svg\interview-svgrepo-com.svg
     - assests\images\svg\audiobook-svgrepo-com (1).svg
+    - assests\images\icons\Arrow - Right Circle.png
+    - assests\images\icons\Arrow - Left Circle.png
+    - assests\images\icons\Arrow - Down Square.png
+    - assests\images\icons\Bookmark.png
+    - assests\images\icons\Camera.png
+    - assests\images\icons\Document-fill.png
+    - assests\images\icons\Document.png
+    - assests\images\icons\Download.png
+    - assests\images\icons\Home.png
+    - assests\images\icons\pause.png
+    - assests\images\icons\Play.png
+    - assests\images\icons\Play2.png
+    - assests\images\icons\Profile.png
+    - assests\images\icons\Search.png
+    - assests\images\icons\Setting.png
+    - assests\images\icons\star-filled.png
+    - assests\images\icons\star-outlined.png
+    - assests\images\icons\Time Square.png
+    - assests\images\icons\Upload.png
+    - assests\images\icons\Paper.png
+    - assests\images\icons\Volume Up.png
+    - assests\images\icons\Search-fill.png
     
 supabase_flutter: ^2.0.0

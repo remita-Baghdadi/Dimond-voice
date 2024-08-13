@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 const Color purple = Color.fromRGBO(136, 88, 214, 1);
+const Color buttonBackground = Color.fromRGBO(233, 231, 237, 1);
+const Color lightPurple = Color.fromRGBO(180, 138, 248, 1);
 const Color white = Color.fromRGBO(255, 255, 255, 1);
 const Color black = Color.fromRGBO(0, 0, 0, 1);
 const Color col1 = Color.fromRGBO(60, 131, 181, 0.7);
