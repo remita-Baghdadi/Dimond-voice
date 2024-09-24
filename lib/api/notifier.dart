@@ -1,58 +1,58 @@
-import 'dart:async';
-import 'dart:collection';
-import 'package:dimondvoice/models/BookModel.dart';
-import 'package:dimondvoice/api/reposiotroy.dart';
-import 'package:flutter/foundation.dart';
+// import 'dart:async';
+// import 'dart:collection';
+// import 'package:dimondvoice/models/BookModel.dart';
+// import 'package:dimondvoice/api/reposiotroy.dart';
+// import 'package:flutter/foundation.dart';
 
-class AudioBooksNotifier with ChangeNotifier {
-  final List<Book> _books = [];
-  List<Book> _top = [];
-  bool _isLoading = false;
-  bool _hasReachedMax = false;
+// class AudioBooksNotifier with ChangeNotifier {
+//   final List<Book> _books = [];
+//   List<Book> _top = [];
+//   bool _isLoading = false;
+//   bool _hasReachedMax = false;
 
-  bool get hasReachedMax => _hasReachedMax;
-  bool get isLoading => _isLoading;
-
-
-  UnmodifiableListView<Book> get books => UnmodifiableListView(_books);
-  UnmodifiableListView<Book> get topBooks => UnmodifiableListView(_top);
-
-  AudioBooksNotifier() {
-    if(_books.isEmpty) {
-      getBooks();
-      getTopBooks();
-    }
-  }
+//   bool get hasReachedMax => _hasReachedMax;
+//   bool get isLoading => _isLoading;
 
 
+//   UnmodifiableListView<Book> get books => UnmodifiableListView(_books);
+//   UnmodifiableListView<Book> get topBooks => UnmodifiableListView(_top);
 
-  Future<void> getTopBooks() async {
-    // if(_isLoading) return;
-    _isLoading = true;
-    try {
-      List<Book> res = await Repository().topBooks();
-      _top = res;
-    }catch(e) {
-      debugPrint(e.toString());
-    }
-    _isLoading = false;
-    notifyListeners();
-  }
-  Future<void> getBooks() async {
-    if(_isLoading) return;
-    _isLoading = true;
-    try {
-      List<Book> res = await Repository().fetchBooks(_books.length, 20);
-      if(res.isEmpty) {
-        _hasReachedMax = true;
-      } else {
-        _books.addAll(res);
-      }
-    }catch(e) {
-      debugPrint(e.toString());
-    }
-    _isLoading = false;
-    notifyListeners();
-  }
+//   AudioBooksNotifier() {
+//     if(_books.isEmpty) {
+//       getBooks();
+//       getTopBooks();
+//     }
+//   }
 
-}
+
+
+//   Future<void> getTopBooks() async {
+//     // if(_isLoading) return;
+//     _isLoading = true;
+//     try {
+//       List<Book> res = await Repository().topBooks();
+//       _top = res;
+//     }catch(e) {
+//       debugPrint(e.toString());
+//     }
+//     _isLoading = false;
+//     notifyListeners();
+//   }
+//   Future<void> getBooks() async {
+//     if(_isLoading) return;
+//     _isLoading = true;
+//     try {
+//       List<Book> res = await Repository().fetchBooks(_books.length, 20);
+//       if(res.isEmpty) {
+//         _hasReachedMax = true;
+//       } else {
+//         _books.addAll(res);
+//       }
+//     }catch(e) {
+//       debugPrint(e.toString());
+//     }
+//     _isLoading = false;
+//     notifyListeners();
+//   }
+
+// }

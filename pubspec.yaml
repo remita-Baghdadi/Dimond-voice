@@ -20,6 +20,7 @@ dependencies:
   audioplayers: ^6.0.0
   http: ^1.2.2
   sqflite: ^2.3.3+1
+  cached_network: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -35,47 +36,68 @@ flutter:
   fonts:
     - family: Ubuntu
       fonts:
-        - asset: assests/fonts/Ubuntu-Regular.ttf
+        - asset: assets/fonts/Ubuntu-Regular.ttf
           weight: 300
-        - asset: assests/fonts/Ubuntu-Medium.ttf
+        - asset: assets/fonts/Ubuntu-Medium.ttf
           weight: 500
-        - asset: assests/fonts/Ubuntu-Bold.ttf        
+        - asset: assets/fonts/Ubuntu-Bold.ttf        
           weight: 700
 
   assets:
-    - assests\white_logo.png
-    - assests\images\audio-book 1.png
-    - assests\images\imam.png
-    - assests\images\microphoneGuy.png
-    - assests\images\podcaster 1.png
-    - assests\images\translate 1.png
-    - assests\images\financial.png
-    - assests\images\svg\translate-svgrepo-com.svg
-    - assests\images\svg\islam-muslim-svgrepo-com.svg
-    - assests\images\svg\microphone-svgrepo-com.svg
-    - assests\images\svg\interview-svgrepo-com.svg
-    - assests\images\svg\audiobook-svgrepo-com (1).svg
-    - assests\images\icons\Arrow - Right Circle.png
-    - assests\images\icons\Arrow - Left Circle.png
-    - assests\images\icons\Arrow - Down Square.png
-    - assests\images\icons\Bookmark.png
-    - assests\images\icons\Camera.png
-    - assests\images\icons\Document-fill.png
-    - assests\images\icons\Document.png
-    - assests\images\icons\Download.png
-    - assests\images\icons\Home.png
-    - assests\images\icons\pause.png
-    - assests\images\icons\Play.png
-    - assests\images\icons\Play2.png
-    - assests\images\icons\Profile.png
-    - assests\images\icons\Search.png
-    - assests\images\icons\Setting.png
-    - assests\images\icons\star-filled.png
-    - assests\images\icons\star-outlined.png
-    - assests\images\icons\Time Square.png
-    - assests\images\icons\Upload.png
-    - assests\images\icons\Paper.png
-    - assests\images\icons\Volume Up.png
-    - assests\images\icons\Search-fill.png
+
+    - assets\white_logo.png
+    - assets\images\audio-book 1.png
+    - assets\images\imam.png
+    - assets\images\microphoneGuy.png
+    - assets\images\podcaster 1.png
+    - assets\images\translate 1.png
+    - assets\images\financial.png
+    - assets\images\svg\translate-svgrepo-com.svg
+    - assets\images\svg\islam-muslim-svgrepo-com.svg
+    - assets\images\svg\microphone-svgrepo-com.svg
+    - assets\images\svg\interview-svgrepo-com.svg
+    - assets\images\svg\audiobook-svgrepo-com (1).svg
+    - assets\images\icons\Arrow - Right Circle.png
+    - assets\images\icons\Arrow - Left Circle.png
+    - assets\images\icons\Arrow - Down Square.png
+    - assets\images\icons\Bookmark.png
+    - assets\images\icons\Camera.png
+    - assets\images\icons\Document-fill.png
+    - assets\images\icons\Document.png
+    - assets\images\icons\Download.png
+    - assets\images\icons\Home.png
+    - assets\images\icons\pause.png
+    - assets\images\icons\Play.png
+    - assets\images\icons\Play2.png
+    - assets\images\icons\Profile.png
+    - assets\images\icons\Search.png
+    - assets\images\icons\Setting.png
+    - assets\images\icons\star-filled.png
+    - assets\images\icons\star-outlined.png
+    - assets\images\icons\Time Square.png
+    - assets\images\icons\Upload.png
+    - assets\images\icons\Paper.png
+    - assets\images\icons\Volume Up.png
+    - assets\images\icons\Search-fill.png
+    - assets\images\audioBook images\alphabet_history_1208.jpg
+    - assets\images\audioBook images\fantasy_fan_2302.jpg
+    - assets\images\audioBook images\ibnBatuta.jpg
+    - assets\images\audioBook images\improvement_human_reason_2309.jpg
+    - assets\audio_book\fantasy\pros pastels\fantasyfan_06_smith_128kb.mp3
+    - assets\audio_book\fantasy\pros pastels\fantasyfan_07_smith_128kb.mp3
+    - assets\audio_book\fantasy\pros pastels\fantasyfan_08_smith_128kb.mp3
+    - assets\audio_book\fantasy\pros pastels\fantasyfan_09_smith_128kb.mp3
+    - assets\audio_book\fantasy\pros pastels\fantasyfan_10_smith_128kb.mp3
+    - assets\audio_book\finance\studyInFinance\studyinfinance_train_cc.mp3
+    - assets\audio_book\gothic\dracula\dracula_01_stoker.mp3
+    - assets\audio_book\historical\alphapte of history\alphabetofhistory_01_nesbit.mp3
+    - assets\audio_book\historical\alphapte of history\alphabetofhistory_02_nesbit.mp3
+    - assets\audio_book\historical\alphapte of history\alphabetofhistory_03_nesbit.mp3
+    - assets\audio_book\historical\alphapte of history\alphabetofhistory_07_nesbit.mp3
+    - assets\audio_book\islamic\travelsofibnbatuta_01_battuta_128kb.mp3
+    - assets\audio_book\islamic\travelsofibnbatuta_02_battuta_128kb.mp3
+    - assets\audio_book\PersDev\improvementOfHumanReason\improvementofhumanreason_01_ibntufayl_128kb.mp3
+    - assets\audio_book\PersDev\improvementOfHumanReason\improvementofhumanreason_02_ibntufayl_128kb.mp3
+    - assets\json\audio_books.json
     
 supabase_flutter: ^2.0.0

@@ -65,7 +65,7 @@ class HomePage extends StatelessWidget {
                           Spacer(),
                           SvgPicture.asset(
                               height: 80,
-                              "assests/images/svg/audiobook-svgrepo-com (1).svg"),
+                              "assets/images/svg/audiobook-svgrepo-com (1).svg"),
                           SizedBox(
                             width: 40,
                           )

@@ -1,8 +1,7 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, unused_local_variable
 
 import 'package:dimondvoice/constants/constansts.dart';
 import 'package:dimondvoice/feature/screens/main/NavBar.dart';
-import 'package:dimondvoice/feature/screens/signUp.dart';
 import 'package:dimondvoice/widgets/authInfo.dart';
 import 'package:flutter/material.dart';
 import 'package:custom_button_builder/custom_button_builder.dart';

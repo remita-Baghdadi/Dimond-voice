@@ -5,7 +5,7 @@ import 'package:dimondvoice/constants/constansts.dart';
 import 'package:dimondvoice/feature/screens/login.dart';
 import 'package:dimondvoice/main.dart';
 import 'package:flutter/material.dart';
-import 'package:supabase/supabase.dart';
+
 
 class splashScreen extends StatefulWidget {
   const splashScreen({super.key});
@@ -52,7 +52,7 @@ class _splashScreenState extends State<splashScreen> {
           SizedBox(height: 200),
           ClipRRect(
             child: Image(
-              image: AssetImage("assests/white_logo.png"),
+              image: AssetImage("assets/white_logo.png"),
               width: 360,
               height: 360,
             ),
