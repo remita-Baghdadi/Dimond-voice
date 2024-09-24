@@ -1,0 +1,95 @@
+{
+
+    "surah1":{
+    "name": "Al-Jathiyah",
+    "reciter": "aziz alili",
+    "aya_number": 3,    
+        
+    "image_cover": "assets/images/quranPic.png",
+    "audio_url":  "quran/Surat Al-Jathiyah.mp3",
+    "chapters":[
+        {
+        "chapterName": "Al-Jathiyah",
+        "chapterId": "1",
+        "chapterUrl": "quran/Surat Al-Jathiyah.mp3"
+        
+    }]
+},
+    "surah2":{
+    "name": "Al-Hujurat",
+    "reciter": "aziz alili",
+    "aya_number": 3,    
+        
+    "image_cover": "assets/images/quranPic.png",
+    "audio_url":  "quran/Surat Al-Hujurat.mp3",
+    "chapters":[
+        {
+        "chapterName": "Al-Hujurat",
+        "chapterId": "1",
+        "chapterUrl": "quran/Surat Al-Hujurat.mp3"
+        
+    }]
+},
+    "surah3":{
+    "name": "Al-Jumu'ah",
+    "reciter": "aziz alili",
+    "aya_number": 3,    
+        
+    "image_cover": "assets/images/quranPic.png",
+    "audio_url":  "quran/Surat Al-Jumu'ah.mp3",
+    "chapters":[
+        {
+        "chapterName": "Al-Jumu'ah",
+        "chapterId": "1",
+        "chapterUrl": "quran/Surat Al-Jumu'ah.mp3"
+        
+    }]
+},
+    "surah4":{
+    "name": "An-Najm",
+    "reciter": "aziz alili",
+    "aya_number": 3,    
+        
+    "image_cover": "assets/images/quranPic.png",
+    "audio_url":  "quran/Surat An-Najm.mp3",
+    "chapters":[
+        {
+        "chapterName": "An-Najm",
+        "chapterId": "1",
+        "chapterUrl": "quran/Surat An-Najm.mp3"
+        
+    }]
+},
+    "surah5":{
+    "name": "as-sajdah",
+    "reciter": "aziz alili",
+    "aya_number": 3,    
+        
+    "image_cover": "assets/images/quranPic.png",
+    "audio_url":  "quran/surat as-sajdah.mp3",
+    "chapters":[
+        {
+        "chapterName": "as-sajdah",
+        "chapterId": "1",
+        "chapterUrl": "quran/surat as-sajdah.mp3"
+        
+    }]
+},
+    "surah6":{
+    "name": "sad",
+    "reciter": "aziz alili",
+    "aya_number": 3,    
+        
+    "image_cover": "assets/images/quranPic.png",
+    "audio_url":  "quran/surat sad.mp3",
+    "chapters":[
+        {
+        "chapterName": "sad",
+        "chapterId": "1",
+        "chapterUrl": "quran/surat sad.mp3"
+        
+    }]
+}
+ 
+
+}

@@ -1,0 +1,56 @@
+{
+    "bld3iza":{
+    "name": "بلد العزة",
+    "author": "lina biach",
+    "length": 3,
+    "summary":"podcast",
+    "image_cover": "assets/images/bld_3izaPic.jpg",
+    "audio_url":  "podcasts/bld_3iza.mp3",
+    "chapters":[
+        {
+        "chapterName": "بلد العزة",
+        "chapterId": "1",
+        "chapterUrl": "podcasts/bld_3iza.mp3"
+        
+    }
+
+    ]
+},
+    "alwan":{
+    "name": "اللون الإعلاني",
+    "author": "lina biach",
+    "length": 3,
+    "summary":"fantastical fiction",
+    "image_cover": "images/photoalawn.jpg",
+    "audio_url":  "voice_overs/alwan ida3a.mp3",
+    "chapters":[
+        {
+        "chapterName": "chinoiserie",
+        "chapterId": "1",
+        "chapterUrl": "voice_overs/alwan ida3a.mp3"
+        
+    }
+
+    ]
+},
+    "lang":{
+    "name": "geneal language introduction",
+    "author": "golden voice",
+    "length": 3,
+    "summary":"fantastical fiction",
+    "image_cover": "assets/images/languages.png",
+    "audio_url":  "lang/hello_Languages.mp3",
+    "chapters":[
+        {
+        "chapterName": "geneal language introduction",
+        "chapterId": "1",
+        "chapterUrl": "lang/hello_Languages.mp3"
+        
+    }
+
+    ]
+}
+   
+    
+   
+}

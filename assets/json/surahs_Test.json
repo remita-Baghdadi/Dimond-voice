@@ -1,0 +1,17 @@
+{
+    "surah1":{
+    "name": "Pro pastels",
+    "reciter": "Pro pastels",
+    "aya_number": 3,    
+        
+    "image_cover": "assets/images/audioBook images/fantasy_fan_2302.jpg",
+    "audio_url":  "audio_book/fantasy/pros pastels/fantasyfan_06_smith_128kb.mp3",
+    "chapters":[
+        {
+        "chapterName": "chinoiserie",
+        "chapterId": "1",
+        "chapterUrl": "audio_book/fantasy/pros pastels/fantasyfan_06_smith_128kb.mp3"
+        
+    }]
+}
+}
