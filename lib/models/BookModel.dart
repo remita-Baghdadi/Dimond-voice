@@ -1,6 +1,4 @@
-
 //const imageRoot = "https://archive.org/services/get-item-image.php?identifier=";
-
 
 class Book {
   final String poster;

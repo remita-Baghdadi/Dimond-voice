@@ -1,5 +1,6 @@
 import 'package:dimondvoice/constants/constansts.dart';
 import 'package:dimondvoice/feature/screens/Home/HomePage.dart';
+import 'package:dimondvoice/feature/screens/audiobooks/placeholder.dart';
 import 'package:dimondvoice/feature/screens/login.dart';
 import 'package:dimondvoice/feature/screens/signUp.dart';
 import 'package:flutter/material.dart';
@@ -20,11 +21,7 @@ class _NavBarState extends State<NavBar> {
     });
   }
 
-  final List _pages = [
-    HomePage(),
-    SignUp(),
-    Signin(),
-  ];
+  final List _pages = [HomePage(), PlaceHolder(), PlaceHolder()];
 
   @override
   Widget build(BuildContext context) {

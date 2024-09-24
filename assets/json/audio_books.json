@@ -5,34 +5,34 @@
     "length": 3,
     "summary":"fantastical fiction",
     "image_cover": "assets/images/audioBook images/fantasy_fan_2302.jpg",
-    "audio_url": "assets/audio_book/fantasy/pros pastels/fantasyfan_06_smith_128kb.mp3",
+    "audio_url":  "audio_book/fantasy/pros pastels/fantasyfan_06_smith_128kb.mp3",
     "chapters":[
         {
         "chapterName": "chinoiserie",
         "chapterId": "1",
-        "chapterUrl": "assets/audio_book/fantasy/pros pastels/fantasyfan_06_smith_128kb.mp3"
+        "chapterUrl": "audio_book/fantasy/pros pastels/fantasyfan_06_smith_128kb.mp3"
         
     },{
         "chapterName": "the mirror in the hall of ebony",
         "chapterId": "2",
-        "chapterUrl": "assets/audio_book/fantasy/pros pastels/fantasyfan_07_smith_128kb.mp3"
+        "chapterUrl": "audio_book/fantasy/pros pastels/fantasyfan_07_smith_128kb.mp3"
         
     },
         {
         "chapterName": "the musa of hyperborea",
         "chapterId": "3",
-        "chapterUrl": "assets/audio_book/fantasy/pros pastels/fantasyfan_08_smith_128kb.mp3"
+        "chapterUrl": "audio_book/fantasy/pros pastels/fantasyfan_08_smith_128kb.mp3"
         
     },{
         "chapterName": "the lotus and the moon",
         "chapterId": "4",
-        "chapterUrl": "assets/audio_book/fantasy/pros pastels/fantasyfan_09_smith_128kb.mp3"
+        "chapterUrl": "audio_book/fantasy/pros pastels/fantasyfan_09_smith_128kb.mp3"
         
     },
         {
         "chapterName": "the passing of aphrodite",
         "chapterId": "5",
-        "chapterUrl": "assets/audio_book/fantasy/pros pastels/fantasyfan_10_smith_128kb.mp3"
+        "chapterUrl": "audio_book/fantasy/pros pastels/fantasyfan_10_smith_128kb.mp3"
         
     }
     ]},
@@ -43,11 +43,11 @@
     "length": 6,
     "summary":"it is what it is ",
     "image_cover": "assets/images/audioBook images/dracula cover.jpg",
-    "audio_url": "assets/audio_book/gothic/dracula/dracula_01_stoker.mp3",
+    "audio_url": "audio_book/gothic/dracula/dracula_01_stoker.mp3",
     "chapters":[{
         "chapterName": "chapter 1",
         "chapterId": "1",
-        "chapterUrl": "assets/audio_book/gothic/dracula/dracula_01_stoker.mp3"
+        "chapterUrl": "audio_book/gothic/dracula/dracula_01_stoker.mp3"
         
     }]},
    
@@ -57,11 +57,11 @@
     "length": 3,
     "summary":"improve you'r knowldge ",
     "image_cover": "assets/images/audioBook images/sutdyInFinance.jpg",
-    "audio_url": "assets/audio_book/finance/studyInFinance/studyinfinance_train_cc.mp3",
+    "audio_url": "audio_book/finance/studyInFinance/studyinfinance_train_cc.mp3",
     "chapters":[{
         "chapterName": "chpater 1",
         "chapterId": "1",
-        "chapterUrl": "assets/audio_book/finance/studyInFinance/studyinfinance_train_cc.mp3"
+        "chapterUrl": "audio_book/finance/studyInFinance/studyinfinance_train_cc.mp3"
         
     }]},
    
@@ -71,36 +71,67 @@
     "length": 3,
     "summary":"the travels of the famouse traveler ibn batuta ",
     "image_cover": "assets/images/audioBook images/ibnBatuta.jpg",
-    "audio_url": "assets/audio_book/islamic/travelsofibnbatuta_01_battuta_128kb.mp3",
+    "audio_url": "audio_book/islamic/travelsofibnbatuta_01_battuta_128kb.mp3",
     "chapters":[{
         "chapterName": "chapter 1 egypte",
         "chapterId": "1",
-        "chapterUrl": "assets/audio_book/islamic/travelsofibnbatuta_01_battuta_128kb.mp3"
+        "chapterUrl": "audio_book/islamic/travelsofibnbatuta_01_battuta_128kb.mp3"
         
     },{
         "chapterName": "chapter 2 egypte to syria",
         "chapterId": "2",
-        "chapterUrl": "assets/audio_book/islamic/travelsofibnbatuta_02_battuta_128kb.mp3"
+        "chapterUrl": "audio_book/islamic/travelsofibnbatuta_02_battuta_128kb.mp3"
         
     }]},
     "bookPersonalDevlopment":{
-    "name": "improvement of the human reason",
+    "name": "improvement of the mind",
     "author": "ibn tufayl",
     "length": 3,
     "summary":"it is what it is ",
-    "image_cover": "assets/images/audio-book 1.png",
-    "audio_url": "assets/audio_book/PersDev/improvementOfHumanReason/improvementofhumanreason_02_ibntufayl_128kb.mp3",
+    "image_cover": "assets/images/audioBook images/improvement_human_reason_2309.jpg",
+    "audio_url": "audio_book/PersDev/improvementOfHumanReason/improvementofhumanreason_02_ibntufayl_128kb.mp3",
     "chapters":[{
         "chapterName": "chapter 1",
         "chapterId": "1",
-        "chapterUrl": "assets/audio_book/PersDev/improvementOfHumanReason/improvementofhumanreason_01_ibntufayl_128kb.mp3"
+        "chapterUrl": "audio_book/PersDev/improvementOfHumanReason/improvementofhumanreason_01_ibntufayl_128kb.mp3"
         
     },{
         "chapterName": "chapter 2",
         "chapterId": "2",
-        "chapterUrl": "assets/audio_book/PersDev/improvementOfHumanReason/improvementofhumanreason_02_ibntufayl_128kb.mp3"
+        "chapterUrl": "audio_book/PersDev/improvementOfHumanReason/improvementofhumanreason_02_ibntufayl_128kb.mp3"
         
-    }]}
+    }]},
+    "bookHistorical":{
+    "name": "alphabet of history ",
+    "author": "author",
+    "length": 3,
+    "summary":"learn about the basics of history ",
+    "image_cover": "assets/images/audioBook images/alphabet_history_1208.jpg",
+    "audio_url": "audio_book/historical/alphapte of history/alphabetofhistory_01_nesbit.mp3",
+    "chapters":[
+        {
+        "chapterName": "chapter 1",
+        "chapterId": "1",
+        "chapterUrl": "audio_book/historical/alphapte of history/alphabetofhistory_01_nesbit.mp3"
+        
+    },{
+        "chapterName": "chapter 2",
+        "chapterId": "2",
+        "chapterUrl": "audio_book/historical/alphapte of history/alphabetofhistory_02_nesbit.mp3"
+        
+    },
+        {
+        "chapterName": "chapter 3",
+        "chapterId": "1",
+        "chapterUrl": "audio_book/historical/alphapte of history/alphabetofhistory_03_nesbit.mp3"
+        
+    },{
+        "chapterName": "chapter 4",
+        "chapterId": "2",
+        "chapterUrl": "audio_book/historical/alphapte of history/alphabetofhistory_07_nesbit.mp3"
+        
+    }
+    ]}
+    
    
 }
-

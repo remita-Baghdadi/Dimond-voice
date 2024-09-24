@@ -20,7 +20,7 @@ Padding audioBooksElement(String imagePath, String text, Widget rout, context) {
             Container(
                 height: 148,
                 width: 148,
-                child: Image.network(imagePath, fit: BoxFit.fill)),
+                child: Image.asset(imagePath, fit: BoxFit.fill)),
             Spacer(),
             Text(
               text,
@@ -37,7 +37,7 @@ Padding audioBooksElement(String imagePath, String text, Widget rout, context) {
   );
 }
 
-Padding surahElement(String text, Widget rout, context) {
+Padding surahElement(String surahName, Widget rout, context, String reciter) {
   return Padding(
     padding: const EdgeInsets.only(top: 15),
     child: InkWell(
@@ -49,9 +49,7 @@ Padding surahElement(String text, Widget rout, context) {
       },
       child: Expanded(
         child: Container(
-
           decoration: BoxDecoration(
-
               color: Color.fromRGBO(218, 247, 236, 0.97),
               borderRadius: BorderRadius.all(Radius.circular(15))),
           height: 70,
@@ -63,23 +61,20 @@ Padding surahElement(String text, Widget rout, context) {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Padding(
-
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
                         height: 50,
                         width: 50,
-                        child: Image.asset("assests/images/imam.png",
+                        child: Image.asset("assets/images/quranPic.png",
                             fit: BoxFit.fill)),
                   ),
-
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.max ,
-
+                    mainAxisSize: MainAxisSize.max,
                     children: [
                       Text(
-                        text,
+                        surahName,
                         style: TextStyle(
                             color: black,
                             fontSize: 12,
@@ -88,15 +83,17 @@ Padding surahElement(String text, Widget rout, context) {
                       ),
                       Row(
                         children: [
-                          Text("reciter: "
-                          , style: TextStyle(fontWeight: bold,),
+                          Text(
+                            "reciter: ",
+                            style: TextStyle(
+                              fontWeight: bold,
+                            ),
                           ),
-                          Text("nameR")
+                          Text(reciter)
                         ],
                       ),
                     ],
                   ),
-
                 ],
               ),
             ],

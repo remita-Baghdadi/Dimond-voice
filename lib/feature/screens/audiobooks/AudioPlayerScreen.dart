@@ -330,7 +330,7 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
               ),
               Slider(
                 min: 0,
-                max: (duration.inSeconds.toDouble() + 300),
+                max: (duration.inSeconds.toDouble() + 1),
                 value: position.inSeconds.toDouble(),
                 activeColor: const Color(0xFF4838D1),
                 inactiveColor: const Color(0xFFDDD7FC),

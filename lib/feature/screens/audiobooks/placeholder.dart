@@ -14,7 +14,15 @@ class PlaceHolder extends StatelessWidget {
           onTap: () => Navigator.pushReplacement(
               context, MaterialPageRoute(builder: (context) => NavBar())),
           child: Center(
-            child: Text("page will be available on the full version "),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Center(
+                    child: Text("page will be available on the full version ")),
+                Icon(Icons.arrow_back_ios_new)
+              ],
+            ),
           ),
         ),
       ),

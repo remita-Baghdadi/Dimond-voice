@@ -2,19 +2,37 @@
 
 import 'package:dimondvoice/constants/constansts.dart';
 import 'package:dimondvoice/feature/screens/audiobooks/AudioBooksHome.dart';
+import 'package:dimondvoice/feature/screens/audiobooks/placeholder.dart';
+import 'package:dimondvoice/main.dart';
+import 'package:dimondvoice/models/Voice_over.dart';
+import 'package:dimondvoice/models/books.dart';
 import 'package:dimondvoice/models/gridLists.dart';
+import 'package:dimondvoice/models/surahs.dart';
 import 'package:dimondvoice/widgets/homeNav.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  void initState() {
+    loadJsonAsset();
+    loadJsonAssets();
+    loadJsonAssetVoice();
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Expanded(
-        child: Column(
+    return Builder(builder: (context) {
+      return Scaffold(
+        body: Column(
           children: [
             Column(
               children: [
@@ -98,13 +116,60 @@ class HomePage extends StatelessWidget {
                 return GridView.builder(
                   itemCount: 4,
                   itemBuilder: (context, index) => Padding(
-                    padding: const EdgeInsets.all(6.0),
-                    child: homeNav(
-                        homePageGridImage[index],
-                        homePageGridText[index],
-                        homePageGridRout[index],
-                        girdColor[index],context),
-                  ),
+                      padding: const EdgeInsets.all(6.0),
+                      child: //homeNav(
+                          //  homePageGridImage[index],
+                          //  homePageGridText[index],
+                          //  newHomePageGridRout[index],
+                          //  girdColor[index],
+                          //  context),
+                          Padding(
+                        padding: const EdgeInsets.only(top: 15),
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      newHomePageGridRout[index]),
+                            );
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
+                                color: girdColor[index],
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(10))),
+                            height: 100,
+                            width: 100,
+                            child: Row(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(
+                                      left: 5, bottom: 40),
+                                  child: Text(
+                                    homePageGridText[index],
+                                    style: TextStyle(
+                                        color: white,
+                                        fontSize: 12,
+                                        fontWeight: medium,
+                                        fontFamily: ub),
+                                  ),
+                                ),
+                                Spacer(
+                                  flex: 1,
+                                ),
+                                SvgPicture.asset(
+                                  homePageGridImage[index],
+                                  height: 70,
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      )),
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2, childAspectRatio: 1.35),
                 );
@@ -112,7 +177,7 @@ class HomePage extends StatelessWidget {
             )),
           ],
         ),
-      ),
-    );
+      );
+    });
   }
 }

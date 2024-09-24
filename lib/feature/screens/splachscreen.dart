@@ -3,9 +3,11 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:dimondvoice/constants/constansts.dart';
 import 'package:dimondvoice/feature/screens/login.dart';
+import 'package:dimondvoice/feature/screens/main/NavBar.dart';
 import 'package:dimondvoice/main.dart';
+import 'package:dimondvoice/models/books.dart';
+import 'package:dimondvoice/widgets/homeNav.dart';
 import 'package:flutter/material.dart';
-
 
 class splashScreen extends StatefulWidget {
   const splashScreen({super.key});
@@ -19,28 +21,28 @@ class _splashScreenState extends State<splashScreen> {
   void initState() {
     super.initState();
     _navigatetohome();
-    _redirect();
+//  _redirect();
     // Timer(Duration(milliseconds: 3000), ()=>Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>))
   }
 
-  Future<void> _redirect() async {
-    await Future.delayed(Duration.zero);
-    final session = supabase.auth.currentSession;
+  // Future<void> _redirect() async {
+  //   await Future.delayed(Duration.zero);
+  //   final session = supabase.auth.currentSession;
 
-    if (!mounted) return;
+  //   if (!mounted) return;
 
-    if (session != null) {
-      Navigator.of(context).pushReplacementNamed('/account');
-    } else {
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => Signin()));
-    }
-  }
+  //   if (session != null) {
+  //     Navigator.of(context).pushReplacementNamed('/account');
+  //   } else {
+  //     Navigator.push(
+  //         context, MaterialPageRoute(builder: (context) => NavBar()));
+  //   }
+  // }
 
   _navigatetohome() async {
-    await Future.delayed(Duration(seconds: 3), () {});
+    await Future.delayed(Duration(seconds: 2), () {});
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => Signin()));
+        context, MaterialPageRoute(builder: (context) => NavBar()));
   }
 
   @override

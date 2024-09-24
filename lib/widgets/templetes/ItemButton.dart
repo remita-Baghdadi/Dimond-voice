@@ -1,12 +1,20 @@
 import 'package:dimondvoice/constants/constansts.dart';
+import 'package:dimondvoice/feature/screens/audiobooks/AudioPlayerScreen.dart';
+import 'package:dimondvoice/models/BookModel.dart';
 import 'package:flutter/material.dart';
 
 Padding chapterItem(
-    String image, String name, String author, Widget rout, context) {
+    String image, String name, String author, Widget rout, context, Book book) {
   return Padding(
     padding: const EdgeInsets.all(8.0),
     child: InkWell(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => AudioPlayerScreen(bookDetail: book)),
+        );
+      },
       child: Container(
         height: 90,
         width: 350,
